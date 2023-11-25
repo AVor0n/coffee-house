@@ -10,6 +10,8 @@
     "build": "rm -rf dist && parcel build ./src/index.html",
     "format": "prettier . --write --ignore-unknown",
     "lint:html": "html-validate src/**/*.html",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint .",
     "lint": "yarn lint:html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -29,7 +31,12 @@
     "parcel": "2.10.3",
     "prettier": "3.1.0",
     "rimraf": "5.0.5",
-    "stylelint": "15.11.0"
+    "stylelint": "15.11.0",
+    "stylelint-config-recommended": "13.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.7.0",
+    "stylelint-order": "6.0.3",
+    "stylelint-semantic-groups": "1.2.0",
+    "stylelint-use-logical-spec": "5.0.0"
   },
   "packageManager": "yarn@4.0.2"
 }
