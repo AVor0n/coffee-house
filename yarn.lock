@@ -1784,6 +1784,8 @@ __metadata:
     eslint-plugin-regexp: "npm:2.1.1"
     gh-pages: "npm:6.1.0"
     html-validate: "npm:8.7.3"
+    husky: "npm:^8.0.0"
+    nano-staged: "npm:0.8.0"
     parcel: "npm:2.10.3"
     prettier: "npm:3.1.0"
     rimraf: "npm:5.0.5"
@@ -3148,6 +3150,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:^8.0.0":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
+  bin:
+    husky: lib/bin.js
+  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -4096,6 +4107,17 @@ __metadata:
     msgpackr-extract:
       optional: true
   checksum: 7e5ae9f741597b6177f1e73d851ede7d6e36a924370bd92ba79ba58766d93d93cff3fa664eab899c8e60e4619084bfa939622c5edbbc2ec77d0d9796048ac09f
+  languageName: node
+  linkType: hard
+
+"nano-staged@npm:0.8.0":
+  version: 0.8.0
+  resolution: "nano-staged@npm:0.8.0"
+  dependencies:
+    picocolors: "npm:^1.0.0"
+  bin:
+    nano-staged: lib/bin.js
+  checksum: a5e976492fd4c980401d31ca2f2a4a176cf63f1a3ca6fe7af8e02d177413e4221f24106182185a2341ebdb02bb99ea97bdb7ab168b197658d2f80f93db57146b
   languageName: node
   linkType: hard
 
