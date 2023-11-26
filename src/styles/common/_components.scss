@@ -4,14 +4,50 @@
 }
 
 .link {
+  display: flex;
+
   padding-block-end: 2px;
 
   text-decoration: none;
   border-block-end: 2px solid transparent;
+
+  &--icon::after {
+    content: '';
+
+    display: inline-block;
+
+    inline-size: 20px;
+    block-size: 20px;
+    margin-inline-start: 8px;
+
+    background-position: bottom;
+  }
 
   @include font-link;
 
   &:hover {
     border-block-end: 2px solid var(--text-dark);
   }
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  &--primary{
+    inline-size: min-content;
+    min-inline-size: 200px;
+    padding: 20px;
+
+    color: var(--text-dark);
+
+    border-radius: 100px;
+
+    background-color: var(--back-body);
+  }
+
+  @include font-button;
 }

@@ -5,7 +5,14 @@
 
 // sections
 @import './sections/header';
+@import './sections/hero';
 
 :root {
   font-family: Inter, sans-serif;
+
+  @include font-body-medium;
+}
+
+* {
+  box-sizing: border-box;
 }

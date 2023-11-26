@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+
+  padding: 100px;
+
+  border-radius: 40px;
+
+  background: url('../assets/img/img-hero.jpg') lightgray 50% / cover no-repeat;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  max-inline-size: 530px;
+
+  color: var(--text-light);
+}
+
+.slogan{
+  margin: 0;
+
+  @include font-heading-1;
+
+  &__emphasis{
+    color: var(--text-accent);
+
+    @include font-heading-1-accent;
+  }
+}
