@@ -2,5 +2,7 @@
   "*.js": ["eslint --fix", "prettier --write"],
   "*.html": ["html-validate", "prettier --write"],
   "*.css": ["stylelint --fix", "prettier --write"],
+  "*{png,jpg,jpeg,webp}": ["node ./optimizeImages.mjs", "git add"],
+  "*{svg}": "svgo -r --multipass",
   "!(*.{html,js,css})": ["prettier --write --ignore-unknown"]
 }
