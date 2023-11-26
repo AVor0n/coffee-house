@@ -1,0 +1,43 @@
+.about {
+  margin-block-end: 100px;
+
+  &__title {
+    margin-block-end: 40px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    max-block-size: 1060px;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    inline-size: 660px;
+    block-size: 590px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    &--small {
+      block-size: 430px;
+    }
+  }
+
+  &__image {
+    transform: scale(1.1);
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
