@@ -1,8 +1,13 @@
 const { propertyOrdering, selectorOrdering } = require('stylelint-semantic-groups');
 
 module.exports = {
-  extends: 'stylelint-config-recommended',
-  plugins: ['stylelint-order', 'stylelint-use-logical-spec', 'stylelint-declaration-block-no-ignored-properties'],
+  extends: ['stylelint-config-standard-scss'],
+  plugins: [
+    'stylelint-scss',
+    'stylelint-order',
+    'stylelint-use-logical-spec',
+    'stylelint-declaration-block-no-ignored-properties',
+  ],
   rules: {
     'color-hex-length': 'long',
     'liberty/use-logical-spec': true,
