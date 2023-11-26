@@ -1269,6 +1269,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/transformer-sass@npm:2.10.3":
+  version: 2.10.3
+  resolution: "@parcel/transformer-sass@npm:2.10.3"
+  dependencies:
+    "@parcel/plugin": "npm:2.10.3"
+    "@parcel/source-map": "npm:^2.1.1"
+    sass: "npm:^1.38.0"
+  checksum: 9d3d746e2a5ecd3fa8ac5296cfa617ab720a7f7727234fb7ad15bfa18c4bb8ab4b1516b2b750a98eb1fbbbd01ea46e5ef430cd6d3cf17498c6853fa767160629
+  languageName: node
+  linkType: hard
+
 "@parcel/transformer-svg@npm:2.10.3":
   version: 2.10.3
   resolution: "@parcel/transformer-svg@npm:2.10.3"
@@ -2662,6 +2673,7 @@ __metadata:
     "@commitlint/cli": "npm:18.4.3"
     "@commitlint/config-conventional": "npm:18.4.3"
     "@parcel/core": "npm:2.10.3"
+    "@parcel/transformer-sass": "npm:2.10.3"
     concurrently: "npm:8.2.2"
     eslint: "npm:8.54.0"
     eslint-config-airbnb-base: "npm:15.0.0"
@@ -7356,7 +7368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.69.5":
+"sass@npm:1.69.5, sass@npm:^1.38.0":
   version: 1.69.5
   resolution: "sass@npm:1.69.5"
   dependencies:

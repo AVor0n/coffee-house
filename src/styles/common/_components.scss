@@ -1,0 +1,17 @@
+.wrapper {
+  max-inline-size: 1440px;
+  margin-inline: auto;
+}
+
+.link {
+  padding-block-end: 2px;
+
+  text-decoration: none;
+  border-block-end: 2px solid transparent;
+
+  @include font-link;
+
+  &:hover {
+    border-block-end: 2px solid var(--text-dark);
+  }
+}

@@ -16,6 +16,7 @@ module.exports = {
     'order/order': selectorOrdering,
     'order/properties-order': propertyOrdering,
     'no-descending-specificity': null,
+    'custom-property-empty-line-before': null,
   },
   defaultSeverity: 'error',
 };
