@@ -30,14 +30,14 @@
   }
 }
 
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
 
   text-decoration: none;
 
-  &--primary{
+  &--primary {
     inline-size: min-content;
     min-inline-size: 200px;
     padding: 20px;
@@ -50,4 +50,16 @@
   }
 
   @include font-button;
+}
+
+.heading {
+  margin: 0;
+
+  @include font-heading-1;
+
+  em {
+    color: var(--text-accent);
+
+    @include font-heading-1-accent;
+  }
 }

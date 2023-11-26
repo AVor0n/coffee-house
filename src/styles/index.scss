@@ -6,11 +6,16 @@
 // sections
 @import './sections/header';
 @import './sections/hero';
+@import './sections/favorite';
 
 :root {
   font-family: Inter, sans-serif;
 
   @include font-body-medium;
+}
+
+body{
+  background-color: var(--back-body);
 }
 
 * {
