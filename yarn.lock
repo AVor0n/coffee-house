@@ -2661,6 +2661,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:18.4.3"
     "@commitlint/config-conventional": "npm:18.4.3"
+    "@parcel/core": "npm:2.10.3"
     concurrently: "npm:8.2.2"
     eslint: "npm:8.54.0"
     eslint-config-airbnb-base: "npm:15.0.0"
