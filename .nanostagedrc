@@ -1,6 +1,6 @@
 {
   "*.js": ["eslint --fix", "prettier --write"],
-  "*.html": ["html-validate", "prettier --write"],
+  "*.html": ["html-validate"],
   "*.css": ["stylelint --fix", "prettier --write"],
   "!(*.{html,js,css})": ["prettier --write --ignore-unknown"]
 }
