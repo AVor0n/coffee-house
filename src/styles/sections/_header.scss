@@ -27,4 +27,9 @@
   &::after {
     background-image: url('../assets/svg/coffee-cup.svg');
   }
+
+  &.active{
+    pointer-events: none;
+    border-block-end: 2px solid var(--text-dark);
+  }
 }
