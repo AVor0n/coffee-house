@@ -31,3 +31,8 @@ p{
 * {
   box-sizing: border-box;
 }
+
+.hidden{
+  position: absolute;
+  inset-block-start:-10000;
+}
