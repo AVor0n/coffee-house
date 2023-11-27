@@ -4,12 +4,15 @@
   align-items: center;
 
   min-block-size: 60px;
-  margin-block: 20px;
+  margin-block: 20px 14px;// 14 for PP
 }
 
 .page-nav {
   display: flex;
   gap: 40px;
+
+  padding: 0;
+  padding-block-end: 4px; // for PP
 
   list-style-type: none;
 

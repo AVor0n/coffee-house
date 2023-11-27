@@ -2,6 +2,8 @@
   margin-block-end: 100px;
 
   &__title {
+    align-self: stretch;
+
     margin-block-end: 40px;
 
     text-align: center;
@@ -15,6 +17,8 @@
     'indicators indicators indicators';
   grid-template-columns: min-content 1fr min-content;
   align-items: center;
+
+  padding-inline: 4px;
 
   &__slides {
     grid-area: slides;
@@ -61,7 +65,7 @@
     grid-area: indicators;
 
     display: flex;
-    gap: 40px;
+    gap: 12px;
 
     margin-block-start: 40px;
     margin-inline: auto;

@@ -19,6 +19,8 @@
   }
 
   &__subtitle {
+  margin-block: 32px 0; //for PP
+
     @include font-heading-3;
   }
 }
