@@ -9,15 +9,14 @@
     "dev:serve": "parcel ./src/index.html --port 3000 --open",
     "dev:watch": "parcel watch ./src/index.html",
     "dev": "concurrently 'yarn:dev:*' --prefix-colors=yellow,cyan --restart-tries=-1",
-    "build": "rm -rf dist && parcel build ./src/index.html",
-    "build:dev": "rm -rf dist && parcel build ./src/index.html --no-optimize",
+    "build": "rm -rf dist && parcel build ./src/index.html --public-url 'https://rolling-scopes-school.github.io/avor0n-JSFE2023Q4/coffee-house'",
+    "build:dev": "yarn build --no-optimize",
     "format": "prettier . --write --ignore-unknown",
     "lint:html": "html-validate src/**/*.html",
     "lint:js": "eslint . --ext .js --fix",
     "lint:css": "stylelint **/*{css,scss} --fix",
     "lint": "concurrently 'yarn:lint:*' --kill-others-on-fail --prefix-colors cyan,magenta,blue",
-    "predeploy": "npm run build:dev",
-    "deploy": "gh-pages -d dist",
+    "deploy": "yarn build:dev && gh-pages -r git@github.com:rolling-scopes-school/avor0n-JSFE2023Q4.git -d dist -e coffee-house",
     "postinstall": "husky install"
   },
   "devDependencies": {
