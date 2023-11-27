@@ -2688,6 +2688,8 @@ __metadata:
     parcel: "npm:2.10.3"
     postcss: "npm:8.4.31"
     postcss-scss: "npm:4.0.9"
+    posthtml-doctype: "npm:1.1.1"
+    posthtml-include: "npm:1.7.4"
     prettier: "npm:3.1.0"
     rimraf: "npm:5.0.5"
     sass: "npm:1.69.5"
@@ -4096,6 +4098,13 @@ __metadata:
   dependencies:
     reusify: "npm:^1.0.4"
   checksum: 5ce4f83afa5f88c9379e67906b4d31bc7694a30826d6cc8d0f0473c966929017fda65c2174b0ec89f064ede6ace6c67f8a4fe04cef42119b6a55b0d465554c24
+  languageName: node
+  linkType: hard
+
+"fclone@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "fclone@npm:1.0.11"
+  checksum: dbe3ebd0883edeec2998874bf951aa03198d727f1091351b22af250ff53e227ee94872487ae88ba7280b2469fb164a7d4dd4e5ece10afd4988ab4712f49bc43b
   languageName: node
   linkType: hard
 
@@ -6872,7 +6881,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthtml-parser@npm:^0.10.1":
+"posthtml-doctype@npm:1.1.1":
+  version: 1.1.1
+  resolution: "posthtml-doctype@npm:1.1.1"
+  checksum: 3ea9bbd12556ef016dc610c989df5861824dc8087b951fe8f6928e6c6d63be5a842b66696f1fdd6d196a4db714e0302831c338d7b46ef1e013075b6297e3ed1d
+  languageName: node
+  linkType: hard
+
+"posthtml-expressions@npm:^1.7.1":
+  version: 1.11.3
+  resolution: "posthtml-expressions@npm:1.11.3"
+  dependencies:
+    fclone: "npm:^1.0.11"
+    posthtml: "npm:^0.16.5"
+    posthtml-match-helper: "npm:^1.0.1"
+    posthtml-parser: "npm:^0.10.0"
+    posthtml-render: "npm:^3.0.0"
+  checksum: b2fdec36fbbbe07008e1abf199d4ad28ea087fed4e4f623f6dc517f68881e21d7f84a6495c0fd53836a48f39c705d63516eec47477b174195e1a2be9eafbd98f
+  languageName: node
+  linkType: hard
+
+"posthtml-include@npm:1.7.4":
+  version: 1.7.4
+  resolution: "posthtml-include@npm:1.7.4"
+  dependencies:
+    posthtml: "npm:^0.16.6"
+    posthtml-expressions: "npm:^1.7.1"
+    posthtml-parser: "npm:^0.11.0"
+  checksum: c6433f2dbcba2cf0c8d467288a1e6806475ea04e17ee62ea67e3262f806452f4004975a3deb7af37b402dd3e12a9a70cd749f752e8f321068b3cdb0b1e035e0a
+  languageName: node
+  linkType: hard
+
+"posthtml-match-helper@npm:^1.0.1":
+  version: 1.0.3
+  resolution: "posthtml-match-helper@npm:1.0.3"
+  peerDependencies:
+    posthtml: ">=0.5.0"
+  checksum: fa7c3b668f39bfe2bf7cf2f17500177bc8c0df9664cee069cd4e11d74e444ec56a92ea51d467cb8ed473ed47e8373d0ce456263428d641829a9a48fe83df8ee3
+  languageName: node
+  linkType: hard
+
+"posthtml-parser@npm:^0.10.0, posthtml-parser@npm:^0.10.1":
   version: 0.10.2
   resolution: "posthtml-parser@npm:0.10.2"
   dependencies:
@@ -6899,7 +6948,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthtml@npm:^0.16.4, posthtml@npm:^0.16.5":
+"posthtml@npm:^0.16.4, posthtml@npm:^0.16.5, posthtml@npm:^0.16.6":
   version: 0.16.6
   resolution: "posthtml@npm:0.16.6"
   dependencies:
