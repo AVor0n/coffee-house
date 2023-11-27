@@ -18,6 +18,10 @@
   @include font-body-medium;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-dark);
 
