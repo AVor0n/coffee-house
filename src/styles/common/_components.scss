@@ -52,7 +52,7 @@
   @include font-button;
 }
 
-.heading {
+h1.heading {
   margin: 0;
 
   @include font-heading-1;
@@ -61,5 +61,17 @@
     color: var(--text-accent);
 
     @include font-heading-1-accent;
+  }
+}
+
+h2.heading {
+  margin: 0;
+
+  @include font-heading-2;
+
+  em {
+    color: var(--text-accent);
+
+    @include font-heading-2-accent;
   }
 }
