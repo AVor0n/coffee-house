@@ -16,7 +16,7 @@
     "lint:js": "eslint . --ext .js --fix",
     "lint:css": "stylelint **/*{css,scss} --fix",
     "lint": "concurrently 'yarn:lint:*' --kill-others-on-fail --prefix-colors cyan,magenta,blue",
-    "deploy": "yarn build:dev && gh-pages -r git@github.com:rolling-scopes-school/avor0n-JSFE2023Q4.git -d dist -e coffee-house",
+    "deploy": "yarn build:dev && gh-pages -r git@github.com:rolling-scopes-school/avor0n-JSFE2023Q4.git -d dist -e coffee-house -f",
     "postinstall": "husky install"
   },
   "devDependencies": {
