@@ -25,6 +25,8 @@
   color: var(--text-dark);
 
   &::after {
+    margin-block-start: 2px;
+
     background-image: url('../assets/svg/coffee-cup.svg');
   }
 

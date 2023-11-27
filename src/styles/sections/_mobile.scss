@@ -34,6 +34,8 @@
   border: 1px solid var(--border-dark);
   border-radius: 100px;
 
+  transition: all 0.5s;
+
   @include font-body-caption;
 
   &:hover {

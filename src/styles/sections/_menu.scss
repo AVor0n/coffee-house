@@ -47,7 +47,10 @@
 
   cursor: pointer;
 
-  &:hover, &--active {
+  transition: all 0.5s;
+
+  &:hover,
+  &--active {
     color: var(--text-light);
 
     border: 1px solid var(--back-container);
@@ -55,7 +58,7 @@
     background-color: var(--back-container);
 
     /* stylelint-disable-next-line selector-class-pattern */
-    .tab__icon.tab__icon{
+    .tab__icon.tab__icon {
       background-color: var(--back-body);
     }
   }
@@ -70,15 +73,15 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &--cup{
+    &--cup {
       background-image: url('../assets/cup.png');
     }
 
-    &--teapot{
+    &--teapot {
       background-image: url('../assets/teapot.png');
     }
 
-    &--cake{
+    &--cake {
       background-image: url('../assets/cake.png');
     }
   }
@@ -115,7 +118,7 @@
   &__img {
     transform: scale(1.1);
 
-    transition: transform 0.3s;
+    transition: transform 0.5s;
   }
 
   &__content {

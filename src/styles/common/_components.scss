@@ -4,12 +4,13 @@
 }
 
 .link {
+  position: relative;
+
   display: flex;
 
-  padding-block-end: 2px;
+  padding-block-end: 4px;
 
   text-decoration: none;
-  border-block-end: 2px solid transparent;
 
   &--icon::after {
     content: '';
@@ -25,8 +26,25 @@
 
   @include font-link;
 
+  &::before {
+    position: absolute;
+    inset-block-end: 0;
+    content: '';
+
+    inline-size: 100%;
+    block-size: 2px;
+
+    background-color: var(--border-dark);
+
+    transform: scaleX(0);
+
+    transition: transform 0.5s;
+  }
+
   &:hover {
-    border-block-end: 2px solid var(--text-dark);
+    &::before {
+      transform: scaleX(1);
+    }
   }
 }
 
