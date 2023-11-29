@@ -2,6 +2,7 @@
 @import 'common/vars';
 @import 'common/mixins';
 @import 'common/components';
+@import 'common/base';
 
 // sections
 @import './sections/header';
@@ -11,32 +12,3 @@
 @import './sections/mobile';
 @import './sections/footer';
 @import './sections/menu';
-
-:root {
-  font-family: Inter, sans-serif;
-
-  @include font-body-medium;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: var(--text-dark);
-
-  background-color: var(--back-body);
-}
-
-p{
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.hidden{
-  position: absolute;
-  inset-block-start:-10000;
-}
