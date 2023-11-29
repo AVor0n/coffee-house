@@ -34,7 +34,9 @@
   border: 1px solid var(--border-dark);
   border-radius: 100px;
 
-  transition: all 0.5s;
+  transition-property: color, background-color;
+  transition-timing-function: linear;
+  transition-duration: var(--animation-duration);
 
   @include font-body-caption;
 
@@ -55,6 +57,10 @@
 
   &__logo-path {
     fill: var(--text-dark);
+
+    transition-property: fill;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
   }
 
   &__title {

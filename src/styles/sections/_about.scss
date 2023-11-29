@@ -34,7 +34,9 @@
   &__image {
     transform: scale(1.1);
 
-    transition: transform 0.5s;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
 
     &:hover {
       transform: scale(1);

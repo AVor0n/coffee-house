@@ -19,7 +19,7 @@
   }
 
   &__subtitle {
-  margin-block: 32px 0; //for PP
+    margin-block: 32px 0; // for PP
 
     @include font-heading-3;
   }
@@ -42,7 +42,9 @@
     border: 1px solid var(--border-light);
     border-radius: 50%;
 
-    transition: all 0.5s;
+    transition-property: border, background-color;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
 
     &:hover {
       border: 1px solid var(--back-body);
@@ -58,6 +60,10 @@
   &__link-path {
     fill: transparent;
     stroke: var(--border-light);
+
+    transition-property: stroke;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
   }
 }
 

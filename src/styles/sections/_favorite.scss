@@ -44,7 +44,9 @@
 
     cursor: pointer;
 
-    transition: all 0.5s;
+    transition-property: color, background-color;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
 
     &:hover {
       color: var(--text-light);

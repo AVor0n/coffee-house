@@ -38,7 +38,9 @@
 
     transform: scaleX(0);
 
-    transition: transform 0.5s;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
   }
 
   &:hover {
