@@ -19,4 +19,5 @@ module.exports = {
     'custom-property-empty-line-before': null,
   },
   defaultSeverity: 'error',
+  ignoreFiles: ['!src/**/*.scss'],
 };
