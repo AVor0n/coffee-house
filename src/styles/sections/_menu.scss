@@ -94,6 +94,7 @@
 }
 
 .product-card {
+  $images-count: 8;
   inline-size: 310;
 
   border: 1px solid var(--border-light);
@@ -101,10 +102,17 @@
 
   cursor: pointer;
 
+  @for $i from 1 through $images-count {
+    &:nth-child(#{$i}) .product-card__img-container {
+      background-image: url('../assets/img/coffee/coffee-#{$i}.jpg');
+      background-position: center;
+    }
+  }
+
   &:hover {
     /* stylelint-disable-next-line selector-class-pattern */
     .product-card__img.product-card__img {
-      transform: scale(1);
+      transform: scale(0.9);
     }
   }
 
@@ -122,7 +130,7 @@
   }
 
   &__img {
-    transform: scale(1.1);
+    transform: scale(1);
 
     transition-property: transform;
     transition-timing-function: linear;
