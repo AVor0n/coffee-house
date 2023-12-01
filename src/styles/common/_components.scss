@@ -1,0 +1,97 @@
+.wrapper {
+  max-inline-size: 1360px;
+  margin-inline: auto;
+}
+
+.link {
+  position: relative;
+
+  display: flex;
+
+  padding-block-end: 4px;
+
+  text-decoration: none;
+
+  &--icon::after {
+    content: '';
+
+    display: inline-block;
+
+    inline-size: 20px;
+    block-size: 20px;
+    margin-inline-start: 8px;
+
+    background-position: bottom;
+  }
+
+  @include font-link;
+
+  &::before {
+    position: absolute;
+    inset-block-end: 0;
+    content: '';
+
+    inline-size: 100%;
+    block-size: 2px;
+
+    background-color: var(--border-dark);
+
+    transform: scaleX(0);
+
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  &--primary {
+    inline-size: min-content;
+    min-inline-size: 200px;
+    padding: 20px;
+
+    color: var(--text-dark);
+
+    border-radius: 100px;
+
+    background-color: var(--back-body);
+  }
+
+  @include font-button;
+}
+
+h1:where(.heading) {
+  margin: 0;
+
+  @include font-heading-1;
+
+  em {
+    color: var(--text-accent);
+
+    @include font-heading-1-accent;
+  }
+}
+
+h2:where(.heading) {
+  margin: 0;
+
+  @include font-heading-2;
+
+  em {
+    color: var(--text-accent);
+
+    @include font-heading-2-accent;
+  }
+}

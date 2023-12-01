@@ -1,0 +1,37 @@
+@font-face {
+  font-weight: 600;
+  font-family: inter;
+  font-style: italic;
+  src:
+    local('Inter'),
+    url("https://fonts.cdnfonts.com/s/19795/Inter-SemiBoldItalic.woff") format('woff');
+}
+
+:root {
+  font-family: Inter, sans-serif;
+
+  @include font-body-medium;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-dark);
+
+  background-color: var(--back-body);
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: absolute;
+  inset-block-start: -10000;
+}

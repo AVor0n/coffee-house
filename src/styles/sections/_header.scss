@@ -1,0 +1,37 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-block-size: 60px;
+  margin-block: 20px 14px;// 14 for PP
+}
+
+.page-nav {
+  display: flex;
+  gap: 40px;
+
+  padding: 0;
+  padding-block-end: 4px; // for PP
+
+  list-style-type: none;
+
+  &__link {
+    color: var(--text-dark);
+  }
+}
+
+.menu-link {
+  color: var(--text-dark);
+
+  &::after {
+    margin-block-start: 2px;
+
+    background-image: url('../assets/svg/coffee-cup.svg');
+  }
+
+  &.active{
+    pointer-events: none;
+    border-block-end: 2px solid var(--text-dark);
+  }
+}

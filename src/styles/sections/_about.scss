@@ -1,0 +1,54 @@
+.about {
+  margin-block-end: 100px;
+
+  &__title {
+    margin-block-end: 40px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    max-block-size: 1060px;
+  }
+
+  &__image-container {
+    $images-count: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    inline-size: 660px;
+    block-size: 590px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    &--small {
+      block-size: 430px;
+    }
+
+    @for $i from 1 through $images-count {
+      &:nth-child(#{$i}) {
+        background-image: url('../assets/img/about/about-#{$i}.jpg');
+        background-position: center;
+      }
+    }
+  }
+
+  &__image {
+    transform: scale(1);
+
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}

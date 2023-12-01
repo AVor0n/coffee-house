@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+
+  margin-block-end: 100px;
+  padding: 100px;
+
+  border-radius: 40px;
+
+  background: url('../assets/img/img-hero.jpg') lightgray 50% / cover no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  max-inline-size: 530px;
+  margin-block-end: 1px; // for PP
+
+  color: var(--text-light);
+
+  @include font-body-medium;
+}
+
+.menu-button {
+  &:hover {
+    /* stylelint-disable-next-line selector-class-pattern */
+    .menu-button__text {
+      margin-inline-end: 18px;
+
+      &::after {
+        inset-inline-end: -28px;
+
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    inset-inline-end: 0;
+
+    transition-property: margin-inline-end;
+    transition-timing-function: linear;
+    transition-duration: var(--animation-duration);
+
+    &::after {
+      position: absolute;
+      inset-block-start: 2px;
+      inset-inline-end: -18px;
+      content: '';
+
+      inline-size: 20px;
+      block-size: 20px;
+
+      background-image: url('../assets/svg/coffee-cup.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      opacity: 0;
+
+      transition-property: inset-inline-end, opacity;
+      transition-timing-function: linear;
+      transition-duration: var(--animation-duration);
+    }
+  }
+}

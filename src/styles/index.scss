@@ -1,0 +1,14 @@
+@import 'common/normalize.css';
+@import 'common/vars';
+@import 'common/mixins';
+@import 'common/components';
+@import 'common/base';
+
+// sections
+@import './sections/header';
+@import './sections/hero';
+@import './sections/favorite';
+@import './sections/about';
+@import './sections/mobile';
+@import './sections/footer';
+@import './sections/menu';
