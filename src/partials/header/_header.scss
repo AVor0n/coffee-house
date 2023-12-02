@@ -4,7 +4,7 @@
   align-items: center;
 
   min-block-size: 60px;
-  margin-block: 20px 14px;// 14 for PP
+  margin-block: 20px 14px; // 14 for PP
 }
 
 .page-nav {
@@ -30,7 +30,7 @@
     background-image: url('../assets/svg/coffee-cup.svg');
   }
 
-  &.active{
+  &.active {
     pointer-events: none;
     border-block-end: 2px solid var(--text-dark);
   }
